@@ -1,6 +1,7 @@
 #include "pathfinding.h"
 
-int main() {
+int main()
+{
     // Определяем стартовую и конечную точки
     Point start = {0.0, 0.0};
     Point end = {5.0, 5.0};
@@ -9,8 +10,7 @@ int main() {
     ForbiddenZone zones[MAX_ZONES] = {
         {{2.0, 2.0}},
         {{3.0, 3.0}},
-        {{4.0, 4.0}}
-    };
+        {{4.0, 4.0}}};
 
     int zone_count = 3; // Количество запрещенных зон
 
