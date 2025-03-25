@@ -28,8 +28,9 @@ void find_route(Point start, Point end, ForbiddenZone zones[], int zone_count) {
             current.x -= 0.1; // Движение влево
         }
 
+        // Проверяем, не попали ли в запрещенную зону
         if (is_in_forbidden_zone(current, zones, zone_count)) {
-            // Если попали в запрещенную зону, откатимся назад
+            printf("Попали в запрещенную зону при движении по X: (%.2f, %.2f). Откат назад.\n", current.x, current.y);
             current.x = (current.x < end.x) ? current.x - 0.1 : current.x + 0.1;
         }
 
@@ -39,8 +40,9 @@ void find_route(Point start, Point end, ForbiddenZone zones[], int zone_count) {
             current.y -= 0.1; // Движение вниз
         }
 
+        // Проверяем, не попали ли в запрещенную зону
         if (is_in_forbidden_zone(current, zones, zone_count)) {
-            // Если попали в запрещенную зону, откатимся назад
+            printf("Попали в запрещенную зону при движении по Y: (%.2f, %.2f). Откат назад.\n", current.x, current.y);
             current.y = (current.y < end.y) ? current.y - 0.1 : current.y + 0.1;
         }
 
@@ -49,4 +51,3 @@ void find_route(Point start, Point end, ForbiddenZone zones[], int zone_count) {
 
     printf("Маршрут завершен! Достигнута цель: (%.2f, %.2f)\n", end.x, end.y);
 }
-

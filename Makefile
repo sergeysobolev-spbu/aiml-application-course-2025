@@ -21,10 +21,10 @@ APP_TARGET = build/pathfinding_app
 # Правило для сборки исполняемого файла
 all: $(APP_TARGET)
 
-$(APP_TARGET): $(OBJ) $(APP_OBJ)
+$(APP_TARGET): $(OBJ1) $(APP_OBJ1)
 	$(CC) $(OBJ) $(APP_OBJ) -o $@ $(LDFLAGS)
 
-$(TEST_TARGET): $(OBJ) $(TEST_OBJ)
+$(TEST_TARGET): $(OBJ1) $(TEST_OBJ1)
 	$(CC) $(OBJ) $(TEST_OBJ) -o $@ $(LDFLAGS)
 
 # Правило для компиляции .c файлов в .o
