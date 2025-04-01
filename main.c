@@ -370,6 +370,7 @@ void print_path_details() {
 }
 
 int main() {
+    printf("запуск примера\n");
     srand(time(NULL));
     
     waypoints[0] = (Point){0, 0};
