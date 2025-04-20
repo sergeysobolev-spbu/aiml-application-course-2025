@@ -408,6 +408,12 @@ void draw_elements() {
 
 // Вывод информации о маршруте
 void print_path_details() {
+    printf("Легенда:\n");
+    printf("S - Стартовая точка\n");
+    printf("E - Конечная точка\n");
+    printf("W - Промежуточные точки\n");
+    printf("@ - Пройденный путь\n");
+    printf("# - Препятствия\n\n");
     printf("\nДетальная информация о маршруте:\n");
     printf("Всего точек в пути: %d\n", full_path_length);
     printf("Общая длина пути: %.2f единиц\n", total_path_length);
