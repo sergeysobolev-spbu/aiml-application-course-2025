@@ -13,8 +13,8 @@
 #define INF 1e9
 
 // Параметры муравьиного алгоритма
-#define ANTS_COUNT 50      // Уменьшено для оптимизации
-#define ITERATIONS 500    // Уменьшено для оптимизации
+#define ANTS_COUNT 20      // Уменьшено для оптимизации
+#define ITERATIONS 50    // Уменьшено для оптимизации
 #define ALPHA 1.0
 #define BETA 3.0
 #define RHO 0.3
